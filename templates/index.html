@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/ac04db102f.js" crossorigin="anonymous"></script>
+    <title>The Sizziling Skillet</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" class="tickbox">
+            <div class="ham-lines">
+                <span class="ham-line line1"></span>
+                <span class="ham-line line2"></span>
+                <span class="ham-line line3"></span>
+            </div>
+            <h1 class="logo">TSS</h1>
+            <ul class="menu-items">
+                <li class="nav-item item1">
+                    <a href="#ShowCase">Home</a>
+                </li>
+                <li class="nav-item item2">
+                    <a href="#About">About</a>
+                </li>
+                <li class="nav-item item3">
+                    <a href="#food">Food</a>
+                </li>
+                <li class="nav-item item4">
+                    <a href="#Food-Menu">Food-Menu</a>
+                </li>
+                <li class="nav-item item5">
+                    <a href="#Testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item item6">
+                    <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="Showcase-area" id="ShowCase">
+        <h1 class="heading1">Sizzling skillet, sizzling satisfaction.</h1>
+        <p class="para">Indulge in our delicious comfort food, cooked to perfection and served piping hot.</p>
+        <a href="#Food-Menu" class="btn primary-btn">Menu</a>
+    </section>
+
+    <section id="About">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>The Sizzling Skillet is a family-owned and operated restaurant that serves delicious comfort food,
+                    cooked to perfection using only the freshest ingredients. We offer a wide variety of classic dishes,
+                    all made with their own special touch. Our friendly and attentive staff is always happy to help you
+                    choose the perfect dish, and they're always looking for new ways to improve their menu. So come on
+                    in and let us show you why The Sizzling Skillet is the best place to get your comfort food fix.</p>
+            </div>
+            <div class="about-image">
+                <!-- <img src="./Images/comfort-food.jpg" alt="Food-Display"> -->
+                <img src="{{url_for('static', filename='./Images/comfort-food.jpg')}}" />
+            </div>
+        </div>
+    </section>
+    <section id="food">
+        <h2>Types Of Food</h2>
+        <div class="food-wrapper container">
+            <div class="food-type pizza">
+                <div class="img-container">
+                    <!-- <img src="./Images/pizza.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/pizza.jpg')}}" />
+                    <div class="img-content">
+                        <h3>Pizza</h3>
+                        <a href="https://en.wikipedia.org/wiki/Pizza_in_the_United_States" target="_blank"
+                            class="btn secondary-btn">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type burger">
+                <div class="img-container">
+                    <!-- <img src="./Images/burger.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/burger.jpg')}}" />
+                    <div class="img-content">
+                        <h3>Burger</h3>
+                        <a href="https://en.wikipedia.org/wiki/History_of_the_hamburger" target="_blank"
+                            class="btn secondary-btn">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type pasta">
+                <div class="img-container">
+                    <!-- <img src="./Images/pasta.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/pasta.jpg')}}" />
+                    <div class="img-content">
+                        <h3>Pasta</h3>
+                        <a href="https://en.wikipedia.org/wiki/Pasta" target="_blank"
+                            class="btn secondary-btn ">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Food-Menu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-items">
+                <div class="food-image">
+                    <!-- <img src="./Images/bbq-ribs.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/bbq-ribs.jpg')}}" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Flavors of the Heartland</h2>
+                    <p>Spinach and Artichoke Dip, Garlic Mashed Potatoes, BBQ Ribs, Warm Apple Crisp.</p>
+                    <p class="food-price">Price: &#8377;749</p>
+                </div>
+            </div>
+            <div class="food-menu-items">
+                <div class="food-image">
+                    <!-- <img src="./Images/garlic-lemon-mahi.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/garlic-lemon-mahi.jpg')}}" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Ocean's Bounty Delights</h2>
+                    <p>Seafood Stuffed Mushrooms, Lemon Garlic Roasted Asparagus, Grilled Mahi-Mahi, Key Lime Pie</p>
+                    <p class="food-price">Price: &#8377;799</p>
+                </div>
+            </div>
+            <div class="food-menu-items">
+                <div class="food-image">
+                    <!-- <img src="./Images/italian.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/italian.jpg')}}" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">A Taste of Italy</h2>
+                    <p>Antipasto Platter, Garlic Bread, Chicken Piccata, Tiramisu.</p>
+                    <p class="food-price">Price: &#8377;849</p>
+                </div>
+            </div>
+            <div class="food-menu-items">
+                <div class="food-image">
+                    <!-- <img src="./Images/mexican.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/mexican.jpg')}}" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Sizzling Southwestern Fiesta</h2>
+                    <p>Queso Dip, Mexican Rice, Beef Enchiladas, Churros.</p>
+                    <p class="food-price">Price: &#8377;799</p>
+                </div>
+            </div>
+            <div class="food-menu-items">
+                <div class="food-image">
+                    <!-- <img src="./Images/orange chicken.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/orange chicken.jpg')}}" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Asian Fusion </h2>
+                    <p>Vegetable Spring Rolls,Coconut Jasmine Rice, Orange Chicken, Mango Sticky Rice.</p>
+                    <p class="food-price">Price: &#8377;799</p>
+                </div>
+            </div>
+            <div class="food-menu-items">
+                <div class="food-image">
+                    <!-- <img src="./Images/vegetraian.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/vegetraian.jpg')}}" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Garden Delights</h2>
+                    <p>Stuffed Portobello Mushrooms, Quinoa Salad, Eggplant Parmesan, Vegan Chocolate Avocado Mousse.
+                    </p>
+                    <p class="food-price">Price: &#8377;769</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Testimonial">
+        <div class="container">
+            <h2>What our Customers Say</h2>
+            <div class="test-wrapper">
+                <div class="test test1">
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                    </div>
+                    <div class="test-statement">
+                        <p>
+                            "Wow! The flavors burst in my mouth. This restaurant never fails to impress with its
+                            exquisite cuisine."</p>
+                    </div>
+                    <div class="test-img">
+                        <!-- <img src="./Images/person1.jpg" alt=""> -->
+                        <img src="{{url_for('static', filename='./Images/person1.jpg')}}" />
+                    </div>
+                    <p class="name">Glen Philip</p>
+                </div>
+                <div class="test test2">
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                    </div>
+                    <div class="test-statement">
+                        <p>"From the warm welcome to the impeccable presentation, this restaurant exceeded all my
+                            expectations."</p>
+                    </div>
+                    <div class="test-img">
+                        <!-- <img src="./Images/person2.jpg" alt=""> -->
+                        <img src="{{url_for('static', filename='./Images/person2.jpg')}}" />
+                    </div>
+                    <p class="name">Maria Hill</p>
+                </div>
+                <div class="test test3">
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                    </div>
+                    <div class="test-statement">
+                        <p>"A hidden gem! The ambiance, the food, and the attentive staff made it a truly memorable
+                            evening."</p>
+                    </div>
+                    <div class="test-img">
+                        <!-- <img src="./Images/person3.jpg" alt=""> -->
+                        <img src="{{url_for('static', filename='./Images/person3.jpg')}}" />
+                    </div>
+                    <p class="name">Mark Wood</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-img-box">
+                    <!-- <img src="./Images/resturant.jpg" alt=""> -->
+                    <img src="{{url_for('static', filename='./Images/resturant.jpg')}}" />
+                </div>
+                <div class="contact-text-box">
+                    <h2>Contact Us</h2>
+                    <form action="">
+                        <label for="Name">Name</label><br>
+                        <input type="text" id="Name">
+                        <label for="Mail">E-Mail</label>
+                        <input type="email" id="Mail">
+                        <textarea  cols="30" rows="5" placeholder="Type your messsage here"></textarea>
+                        <input type="button" value="Submit" class="btn primary-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="social-media">
+            <i class="fab fa-facebook fa-4x"></i>
+        <i class="fab fa-twitter fa-4x"></i>
+        <i class="fab fa-instagram fa-4x"></i>
+        </div>
+        <p class="para col-white">The Sizziling Skillet &copy; 2022. All Right Reserved</p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+
+</html>
