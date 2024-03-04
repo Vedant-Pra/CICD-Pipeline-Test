@@ -7,6 +7,7 @@ def myFunc():
     return render_template('index.html')
 
 if __name__ == '__main__':
+    print("Hello Vedant!! It worked.")
     app.run(host='0.0.0.0', port=5000)
 
     
